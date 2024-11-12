@@ -1,0 +1,53 @@
+/* Base styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("file:///C:\Users\Schulung.SCHULUNG3-LP07\Desktop\Amazing15\Angular\blog\public\images\background-img.jpg");
+    position: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    }
+
+/* Link styling */
+
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #007bff;
+}
+
+/* Utility Classes */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* src/styles/styles.css */
+
+/* Define CSS custom properties (variables) for reusability */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --accent-color: #28a745;
+    --background-color: #f8f9fa;
+    --text-color: #343a40;
+    --spacer: 1rem;
+    --container-padding: 2rem;
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+  }
+  

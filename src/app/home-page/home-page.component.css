@@ -1,0 +1,66 @@
+/* src/app/blog/blog.component.css */
+
+/* Layout */
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacer);
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  .blog-post {
+    background-color: #fff;
+    padding: var(--spacer);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-post-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  .blog-post-date {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+  }
+  
+  .blog-post-content {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-top: 1rem;
+  }
+  
+  .blog-post-content a {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+  
+  .blog-footer {
+    text-align: center;
+    padding: var(--spacer);
+    background-color: var(--background-color);
+  }
+
+  @media (max-width: 768px) {
+    .blog-container {
+        padding: 1rem;
+      }
+    
+      .blog-post {
+        padding: 1rem;
+      }
+    
+      .blog-post-title {
+        font-size: 1.5rem;
+      }
+    
+      .blog-post-content {
+        font-size: 0.9rem;
+      }
+  }
+
