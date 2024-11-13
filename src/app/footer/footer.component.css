@@ -5,16 +5,8 @@
   padding-bottom: 2rem;
   font-size: 1.1rem;
   color: #555;
-  background-color: #030303b4;
+  background-color: rgba(52, 107, 180, 0.76);
   border-top: 1px solid #000000;
   margin-bottom: -2rem;
   margin-top: 10rem;
-}
-
-.footer a {
-  color: #007bff;
-}
-
-.footer a:hover {
-  text-decoration: underline;
 }

@@ -9,10 +9,10 @@
 
 .blog-post {
   max-width: 800px;
-  background-color: #030303b4;
+  --background-color: var(--background-color);
   padding: var(--spacer);
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(236, 23, 23, 0.801);
 }
 
 .blog-post-title {

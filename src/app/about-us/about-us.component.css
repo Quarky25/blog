@@ -5,26 +5,19 @@
   width: 100%;
   max-width: 1200px;
   max-height: 1200px;
-  margin-top: 4rem;
+  margin: 10rem auto;
   padding: 2rem;
-  background-color: #030303b4;
+  --background-color: var(--background-color);
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(253, 0, 0, 0.466);
+  overflow: auto;
 }
 h1,
 h2 {
   font-weight: bold;
-  color: #222;
+  color: var(--text-color);
 }
 
-a {
-  text-decoration: none;
-  color: #007bff;
-}
-
-a:hover {
-  text-decoration: underline;
-}
 /* Header */
 .about-header {
   text-align: center;
@@ -33,12 +26,13 @@ a:hover {
 
 .about-header h1 {
   font-size: 2.5rem;
-  color: #222;
+  --text-color: var(--text-color);
 }
 
 .about-header p {
   font-size: 1.2rem;
-  color: #555;
+  color: var(--text-color);
+
   margin-top: 0.5rem;
 }
 
@@ -49,18 +43,19 @@ a:hover {
 
 .mission h2 {
   font-size: 2rem;
-  color: #333;
+  color: var(--text-color);
 }
 
 .mission p {
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 1.2rem;
+  color: var(--text-color);
+
   line-height: 1.8;
   margin-top: 0.5rem;
 }
 
 .mission strong {
-  color: #007bff;
+  color: var(--text-color);
 }
 
 /* Content Section */
@@ -70,7 +65,7 @@ a:hover {
 
 .content h2 {
   font-size: 2rem;
-  color: #333;
+  color: var(--text-color);
 }
 
 .content ul {
@@ -80,7 +75,7 @@ a:hover {
 }
 
 .content li {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.7;
   margin-bottom: 1rem;
 }
@@ -92,12 +87,13 @@ a:hover {
 
 .about-team h2 {
   font-size: 2rem;
-  color: #333;
+  color: var(--text-color);
 }
 
 .about-team p {
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 1.2rem;
+  color: var(--text-color);
+
   line-height: 1.8;
   margin-top: 0.5rem;
 }
@@ -109,18 +105,19 @@ a:hover {
 
 .join h2 {
   font-size: 2rem;
-  color: #333;
+  color: var(--text-color);
 }
 
 .join p {
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 1.2rem;
+  color: var(--text-color);
+
   line-height: 1.8;
   margin-top: 0.5rem;
 }
 
 .join strong {
-  color: #007bff;
+  color: var(--text-color);
 }
 
 /* Responsive Design */
