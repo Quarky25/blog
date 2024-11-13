@@ -7,9 +7,9 @@
   max-height: 1200px;
   margin: 10rem auto;
   padding: 2rem;
-  --background-color: var(--background-color);
+  background-color: #000000b4;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(253, 0, 0, 0.466);
+  box-shadow: 0 4px 8px inset rgba(253, 0, 0, 0.466);
   overflow: auto;
 }
 h1,

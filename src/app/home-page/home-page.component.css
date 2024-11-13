@@ -13,10 +13,10 @@
 }
 
 .blog-post {
-  background-color: ;
+  background-color: #000000b4;
   padding: var(--spacer);
   border-radius: 10px;
-  box-shadow: 0 4px 8px inset rgba(236, 23, 23, 0.712);
+  box-shadow: 0 4px 8px rgba(219, 8, 8, 0.808);
   margin: 3rem auto;
 }
 

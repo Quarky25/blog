@@ -7,9 +7,9 @@
   max-width: 800px;
   margin: 10rem auto;
   padding: 1.5rem;
-  --background-color: var(--background-color);
+  background-color: #000000b4;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(236, 23, 23, 0.801);
+  box-shadow: 0 4px 8px inset rgba(236, 23, 23, 0.801);
   overflow: auto;
 }
 

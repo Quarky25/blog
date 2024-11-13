@@ -1,6 +1,6 @@
 /* Navbar Styling */
 .navbar {
-  background-color: rgba(52, 107, 180, 0.76);
+  background-color: #000000b4;
   width: 100%;
   position: fixed;
   top: 0;
@@ -14,7 +14,7 @@
 
 /* Navbar Links */
 .navbar a {
-  color: #8f2a68da;
+  color: #89a9e6;
   text-decoration: none;
   font-size: 1rem;
   margin: 0 1rem;
@@ -46,7 +46,7 @@
 .title {
   text-decoration: none;
   font-size: 1.5rem;
-  color: #fff;
+  color: #ff4081; /* Hover effect */
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   text-align: center;
   display: inline-block;
