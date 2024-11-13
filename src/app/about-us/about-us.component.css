@@ -1,5 +1,16 @@
 /* src/styles/styles.css */
 
+/* Main Container */
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+  max-height: 1200px;
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: #030303b4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 h1,
 h2 {
   font-weight: bold;
@@ -14,19 +25,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
-/* Main Container */
-.about-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 2rem;
-  padding: 2rem;
-  background-color: #030303b4;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 /* Header */
 .about-header {
   text-align: center;
@@ -106,7 +104,7 @@ a:hover {
 
 /* Join Section */
 .join {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .join h2 {
@@ -123,24 +121,6 @@ a:hover {
 
 .join strong {
   color: #007bff;
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  padding-top: 2rem;
-  font-size: 1.1rem;
-  color: #555;
-  border-top: 1px solid #eaeaea;
-  margin-top: 2rem;
-}
-
-.footer a {
-  color: #007bff;
-}
-
-.footer a:hover {
-  text-decoration: underline;
 }
 
 /* Responsive Design */

@@ -3,9 +3,11 @@
 /* Main Container */
 .contact-container {
   width: 100%;
+  max-height: 1200px;
   max-width: 800px;
   margin: 3rem auto;
-  padding: 2rem;
+  margin-top: 4rem;
+  padding: 1.5rem;
   background-color: #030303b4;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -75,21 +77,18 @@ button.submit-btn {
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-bottom: -1.5rem;
 }
 
 button.submit-btn:hover {
   background-color: #0056b3;
 }
 
-button[disabled] {
-  background-color: #ddd;
-  cursor: not-allowed;
-}
-
 /* Footer */
 .contact-footer {
   text-align: center;
   margin-top: 2rem;
+  margin-bottom: -1.5rem;
   font-size: 1.1rem;
   color: #555;
 }
