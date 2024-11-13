@@ -4,18 +4,19 @@
 .about-container {
   width: 100%;
   max-width: 1200px;
-  max-height: 1200px;
-  margin: 10rem auto;
+  max-height: 800px;
+  height: 100%;
+  margin: 15rem auto;
   padding: 2rem;
   background-color: #000000b4;
   border-radius: 8px;
-  box-shadow: 0 4px 8px inset rgba(253, 0, 0, 0.466);
+  box-shadow: 0 4px 8px rgba(253, 0, 0, 0.466);
   overflow: auto;
 }
 h1,
 h2 {
   font-weight: bold;
-  color: var(--text-color);
+  color: #fbfbfcf8;
 }
 
 /* Header */
@@ -26,12 +27,12 @@ h2 {
 
 .about-header h1 {
   font-size: 2.5rem;
-  --text-color: var(--text-color);
+  color: #fbfbfcf8;
 }
 
 .about-header p {
   font-size: 1.2rem;
-  color: var(--text-color);
+  color: #fbfbfcf8;
 
   margin-top: 0.5rem;
 }
@@ -43,19 +44,19 @@ h2 {
 
 .mission h2 {
   font-size: 2rem;
-  color: var(--text-color);
+  color: #fbfbfcf8;
 }
 
 .mission p {
   font-size: 1.2rem;
-  color: var(--text-color);
+  color: #fbfbfcf8;
 
   line-height: 1.8;
   margin-top: 0.5rem;
 }
 
 .mission strong {
-  color: var(--text-color);
+  color: #fbfbfcf8;
 }
 
 /* Content Section */
@@ -65,7 +66,7 @@ h2 {
 
 .content h2 {
   font-size: 2rem;
-  color: var(--text-color);
+  color: #fbfbfcf8;
 }
 
 .content ul {
@@ -87,12 +88,12 @@ h2 {
 
 .about-team h2 {
   font-size: 2rem;
-  color: var(--text-color);
+  color: #fbfbfcf8;
 }
 
 .about-team p {
   font-size: 1.2rem;
-  color: var(--text-color);
+  color: #fbfbfcf8;
 
   line-height: 1.8;
   margin-top: 0.5rem;
@@ -105,19 +106,19 @@ h2 {
 
 .join h2 {
   font-size: 2rem;
-  color: var(--text-color);
+  color: #fbfbfcf8;
 }
 
 .join p {
   font-size: 1.2rem;
-  color: var(--text-color);
+  color: #fbfbfcf8;
 
   line-height: 1.8;
   margin-top: 0.5rem;
 }
 
 .join strong {
-  color: var(--text-color);
+  color: #fbfbfcf8;
 }
 
 /* Responsive Design */
