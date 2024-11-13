@@ -1,14 +1,15 @@
 <div class="blog-container">
-    
-    @for (post of posts; track $index) {
-    <div class="blog-post">
-        
-        <h2 class="blog-post-title">{{post.title}}</h2>
-        <p class="blog-post-date">{{post.date}}</p>
-        <p class="blog-post-content">{{post.content | slice : 0 : 550}}</p>
-        <hr>
-        <a type="button" class="btn btn-success" routerLink="details/{{$index}}">Read more</a>
-        <hr>
-    </div>
-}
+  @for (post of posts; track $index) {
+  <div class="blog-post">
+    <h2 class="blog-post-title">{{ post.title }}</h2>
+    <p class="blog-post-date">{{ post.date }}</p>
+    <p class="blog-post-content">{{ post.content | slice : 0 : 550 }}</p>
+    <strong><hr /></strong>
+
+    <a type="button" class="btn btn-success" routerLink="details/{{ $index }}"
+      >Read more</a
+    >
+    <strong><hr /></strong>
+  </div>
+  }
 </div>

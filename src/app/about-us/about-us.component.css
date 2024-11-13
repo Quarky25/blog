@@ -1,169 +1,173 @@
 /* src/styles/styles.css */
 
+h1,
+h2 {
+  font-weight: bold;
+  color: #222;
+}
 
- 
-  
-  h1, h2 {
-    font-weight: bold;
-    color: #222;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #007bff;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Main Container */
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Main Container */
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: #030303b4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.about-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* Mission Section */
+.mission {
+  margin-bottom: 2rem;
+}
+
+.mission h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.mission p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-top: 0.5rem;
+}
+
+.mission strong {
+  color: #007bff;
+}
+
+/* Content Section */
+.content {
+  margin-bottom: 2rem;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.content li {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* About Team Section */
+.about-team {
+  margin-bottom: 2rem;
+}
+
+.about-team h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.about-team p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-top: 0.5rem;
+}
+
+/* Join Section */
+.join {
+  margin-bottom: 2rem;
+}
+
+.join h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.join p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-top: 0.5rem;
+}
+
+.join strong {
+  color: #007bff;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 1.1rem;
+  color: #555;
+  border-top: 1px solid #eaeaea;
+  margin-top: 2rem;
+}
+
+.footer a {
+  color: #007bff;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .about-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
   }
-  
-  /* Header */
-  .about-header {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
+
   .about-header h1 {
-    font-size: 2.5rem;
-    color: #222;
+    font-size: 2rem;
   }
-  
+
   .about-header p {
-    font-size: 1.2rem;
-    color: #555;
-    margin-top: 0.5rem;
+    font-size: 1rem;
   }
-  
-  /* Mission Section */
-  .mission {
-    margin-bottom: 2rem;
-  }
-  
-  .mission h2 {
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  .mission p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.8;
-    margin-top: 0.5rem;
-  }
-  
-  .mission strong {
-    color: #007bff;
-  }
-  
-  /* Content Section */
-  .content {
-    margin-bottom: 2rem;
-  }
-  
-  .content h2 {
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  .content ul {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 1rem;
-  }
-  
-  .content li {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin-bottom: 1rem;
-  }
-  
-  /* About Team Section */
-  .about-team {
-    margin-bottom: 2rem;
-  }
-  
-  .about-team h2 {
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  .about-team p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.8;
-    margin-top: 0.5rem;
-  }
-  
-  /* Join Section */
-  .join {
-    margin-bottom: 2rem;
-  }
-  
+
+  .mission h2,
+  .content h2,
+  .about-team h2,
   .join h2 {
-    font-size: 2rem;
-    color: #333;
+    font-size: 1.8rem;
   }
-  
+
+  .content li,
+  .mission p,
+  .about-team p,
   .join p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.8;
-    margin-top: 0.5rem;
+    font-size: 1rem;
   }
-  
-  .join strong {
-    color: #007bff;
-  }
-  
-  /* Footer */
-  .footer {
-    text-align: center;
-    padding-top: 2rem;
-    font-size: 1.1rem;
-    color: #555;
-    border-top: 1px solid #eaeaea;
-    margin-top: 2rem;
-  }
-  
-  .footer a {
-    color: #007bff;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .about-container {
-      padding: 1.5rem;
-    }
-  
-    .about-header h1 {
-      font-size: 2rem;
-    }
-  
-    .about-header p {
-      font-size: 1rem;
-    }
-  
-    .mission h2, .content h2, .about-team h2, .join h2 {
-      font-size: 1.8rem;
-    }
-  
-    .content li, .mission p, .about-team p, .join p {
-      font-size: 1rem;
-    }
-  }
-  
+}

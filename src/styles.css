@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+.background {
+  background-image: url(../public/images/background-img.jpg);
+  z-index: -1;
+  background-size: cover;
+}

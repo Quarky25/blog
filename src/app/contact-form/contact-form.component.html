@@ -1,68 +1,78 @@
 <!-- src/app/contact/contact.component.html -->
 <div class="contact-container">
-    <header class="contact-header">
-      <h1>Contact Us</h1>
-      <p>If you have any questions or need further information, feel free to reach out to us!</p>
-    </header>
-  
-    <form class="contact-form" (ngSubmit)="onSubmit()" [formGroup]="contactForm">
-      <div class="form-group">
-       
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name">
-    
-      </div>
-  
-      <div class="form-group">
-        <label for="eMail">Your Email</label>
-        <input type="email" id="email" name="email"  placeholder="Enter your email">
-      </div>
-  
-      <div class="form-group">
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject"  placeholder="Enter subject">
-      </div>
-  
-      <div class="form-group">
-        <label for="message">Your Message</label>
-        <textarea id="message" name="message"  placeholder="Type your message here" rows="5"></textarea>
-      </div>
-  
-      <button type="submit" class="submit-btn">Send Message</button>
-    </form>
-  
-    <footer class="contact-footer">
-      <p>If you prefer, you can also <a href="mailto:contact@example.com">email us directly</a>.</p>
-    </footer>
-  </div>
-  
-  @if (name?.invalid && (name?.dirty || name?.touched)) {
-    
-    @if (name?.errors?.['required']) 
-    {
-        <p>Name is required</p>
-    }@else if (name?.errors?.['minLength']) {
-        <p>Minimum 3 characters required</p>
-    }
+  <header class="contact-header">
+    <h1>Contact Us</h1>
+    <p>
+      If you have any questions or need further information, feel free to reach
+      out to us!
+    </p>
+  </header>
 
-  }
+  <form class="contact-form" (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+    <div class="form-group">
+      <label for="name" class="form-label">Your Name</label>
+      <input
+        type="text"
+        id="name"
+        formControlName="name"
+        placeholder="Enter your name"
+      />
+    </div>
 
-@if (eMail?.invalid && (eMail?.dirty || eMail?.touched)) {
-    
-    @if (eMail?.errors?.['required']) {
-        <p>Email is required</p>
-    }@else if (eMail?.errors?.['email']) {
-        <p>Invalid Email format</p>
-    }
-}
+    <div class="form-group">
+      <label for="eMail" class="form-label">Your Email</label>
+      <input
+        type="email"
+        id="email"
+        formControlName="eMail"
+        placeholder="Enter your email"
+      />
+    </div>
 
-@if (message?.invalid && (message?.dirty || message?.touched)) {
-    
-    @if (message?.errors?.['required']) 
-    {
-        <p>Name is required</p>
-    }@else if (message?.errors?.['minLength']) {
-        <p>Minimum 3 characters required</p>
-    }
+    <div class="form-group">
+      <label for="subject" class="form-label">Subject</label>
+      <input
+        type="text"
+        id="subject"
+        formControlName="subject"
+        placeholder="Enter subject"
+      />
+    </div>
 
-  }
+    <div class="form-group">
+      <label for="message" class="form-label">Your Message</label>
+      <textarea
+        id="message"
+        formControlName="message"
+        placeholder="Type your message here"
+        rows="5"
+      ></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Send Message</button>
+  </form>
+
+  <footer class="contact-footer">
+    <p>
+      If you prefer, you can also
+      <a href="mailto:contact@example.com">email us directly</a>.
+    </p>
+  </footer>
+</div>
+
+@if (name?.invalid && (name?.dirty || name?.touched)) { @if
+(name?.errors?.['required']) {
+<p>Name is required</p>
+}@else if (name?.errors?.['minLength']) {
+<p>Minimum 3 characters required</p>
+} } @if (eMail?.invalid && (eMail?.dirty || eMail?.touched)) { @if
+(eMail?.errors?.['required']) {
+<p>Email is required</p>
+}@else if (eMail?.errors?.['email']) {
+<p>Invalid Email format</p>
+} } @if (message?.invalid && (message?.dirty || message?.touched)) { @if
+(message?.errors?.['required']) {
+<p>Name is required</p>
+}@else if (message?.errors?.['minLength']) {
+<p>Minimum 3 characters required</p>
+} }
