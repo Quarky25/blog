@@ -1,15 +1,12 @@
 /* Base styles */
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  --text-color: var(--text-color);
-  line-height: 1.6;
 }
 
 /* Link styling */
@@ -31,16 +28,3 @@ a:hover {
 }
 
 /* src/styles/styles.css */
-
-/* Define CSS custom properties (variables) for reusability */
-:root {
-  --primary-color: #007bff;
-  --secondary-color: #434a50;
-  --accent-color: #28a745;
-  --background-color: #000000b4;
-  --text-color: #fbfbfcf8;
-  --spacer: 1rem;
-  --container-padding: 2rem;
-  --font-primary: "Roboto", sans-serif;
-  --font-secondary: "Open Sans", sans-serif;
-}

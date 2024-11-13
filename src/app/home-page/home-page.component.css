@@ -6,16 +6,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: var(--spacer);
+  gap: 1rem;
   max-width: 1200px;
   overflow: auto;
   margin: 10rem auto;
-  padding: var(--spacer);
+  padding: 1rem;
 }
 
 .blog-post {
   background-color: #000000b4;
-  padding: var(--spacer);
+  padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(219, 8, 8, 0.808);
   margin: 3rem auto;
@@ -25,26 +25,26 @@
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  color: var(--text-color);
+  color: #fbfbfcf8;
   margin-bottom: 1rem;
 }
 
 .blog-post-date {
   font-size: 0.9rem;
-  color: var(--secondary-color);
+  color: #fbfbfcf8;
 }
 
 .blog-post-content {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: var(--text-color);
+  color: #fbfbfcf8;
   margin-top: 1rem;
-  padding: var(--spacer);
+  padding: 1rem;
 }
 
 .blog-footer {
   text-align: center;
-  padding: var(--spacer);
+  padding: 1rem;
   background-color: #000000b4;
 }
 
