@@ -10,6 +10,7 @@
   max-width: 1200px;
   overflow: auto;
   margin: 10rem auto;
+  padding: var(--spacer);
 }
 
 .blog-post {
@@ -44,7 +45,7 @@
 .blog-footer {
   text-align: center;
   padding: var(--spacer);
-  background-color: var(--background-color);
+  background-color: #000000b4;
 }
 
 @media (max-width: 768px) {
