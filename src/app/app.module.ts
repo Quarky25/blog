@@ -9,6 +9,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PostDetailsComponent } from './post-details/post-details.component';
+import { FooterComponent } from './footer/footer.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +20,18 @@ import { PostDetailsComponent } from './post-details/post-details.component';
     AboutUsComponent,
     NavbarComponent,
     ContactFormComponent,
-    PostDetailsComponent
+    PostDetailsComponent,
+    FooterComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

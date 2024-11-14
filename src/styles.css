@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+/* Define CSS custom properties (variables) for reusability */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #434a50;
+  --accent-color: #28a745;
+
+  --text-color: #fbfbfcf8;
+  --spacer: 1rem;
+  --container-padding: 2rem;
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Open Sans", sans-serif;
+}
+body {
+  background-image: url(../public/images/background-img.jpg);
+  z-index: -1;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+
+  margin: 0;
+  height: 100%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: #8f2a68da;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff4081; /* Hover effect */
+}
+
+hr {
+  border: 3px solid rgb(0, 0, 0);
+}

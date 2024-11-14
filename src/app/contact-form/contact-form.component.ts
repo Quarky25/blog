@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-form',
@@ -7,18 +7,22 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrl: './contact-form.component.css'
 })
 export class ContactFormComponent {
-submitted = false;
-contactForm: FormGroup;
+submitted: boolean = false;
+contactForm!: FormGroup;
 
 constructor(private fb: FormBuilder) {
-  this.contactForm = this.fb.group({
-    name: ['', [Validators.required, Validators.minLength(3)]],
-    eMail: ['', [Validators.required, Validators.email]],
-    message: ['', [Validators.required, Validators.minLength(10)]],
-
-  })
+  this.createForm();
+  
 }
 
+createForm() {
+  this.contactForm = this.fb.group({
+    name: new FormControl<string>('', [Validators.required, Validators.minLength(3)]),
+    eMail: new FormControl<string> ('', [Validators.required, Validators.email]),
+    message: new FormControl<string> ('', [Validators.required, Validators.minLength(10)]),
+    subject: new FormControl<string>('', [Validators.required, Validators.minLength(3)])
+  })
+}
 get name() {
   return this.contactForm.get('name');
 }
@@ -31,13 +35,22 @@ get message() {
   return this.contactForm.get('message');
 }
 // Handle form submit
-  onSubmit() {
+  onSubmit(): void {
     if(this.contactForm.valid) {
+      alert('Form Submitted')
     console.log("Form Submitted", this.contactForm.value);
-  this.contactForm.reset();
+    this.contactForm.reset();
+  this.contactForm.valueChanges.subscribe(value => {
+    console.log('New Value:', value);
+    
+  })
     
   }else {
-    this.contactForm.markAllAsTouched(); //highlight errors
+    console.log('Form submit failed');
+    this.contactForm.markAllAsTouched();
+    
   }
+  console.log(this.contactForm.valid);
+  
 }
 }
