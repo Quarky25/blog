@@ -1,51 +1,25 @@
-/* src/app/blog/blog.component.css */
-
-/* Layout */
 .blog-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 1rem;
   max-width: 1200px;
   overflow: auto;
-  margin: 10rem auto;
-  padding: 1rem;
+  margin: 5rem auto;
+  padding: var(--spacer);
 }
 
 .blog-post {
-  background-color: #000000b4;
-  padding: 1rem;
+  background-color: var(--background-color);
+  padding: var(--spacer);
   border-radius: 10px;
+  -webkit-box-shadow: 0 4px 8px rgba(219, 8, 8, 0.808);
   box-shadow: 0 4px 8px rgba(219, 8, 8, 0.808);
   margin: 3rem auto;
 }
 
-.blog-post-title {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fbfbfcf8;
-  margin-bottom: 1rem;
-}
-
 .blog-post-date {
   font-size: 0.9rem;
-  color: #fbfbfcf8;
+  
 }
-
-.blog-post-content {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #fbfbfcf8;
-  margin-top: 1rem;
-  padding: 1rem;
-}
-
-.blog-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #000000b4;
+.btn{
+  margin: 1rem auto;
 }
 
 @media (max-width: 768px) {

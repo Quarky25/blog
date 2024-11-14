@@ -1,15 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
 /* Define CSS custom properties (variables) for reusability */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Utility Classes */
 :root {
   --primary-color: #007bff;
   --secondary-color: #434a50;
   --accent-color: #28a745;
-
+  --background-color: #000000b4;
   --text-color: #fbfbfcf8;
   --spacer: 1rem;
   --container-padding: 2rem;
   --font-primary: "Roboto", sans-serif;
   --font-secondary: "Open Sans", sans-serif;
+  --link-primary: #40c3ff;
+  --link-hover: #ff4081;
+
+  a {
+    color: var(--link-primary);
+    text-decoration: none;
+
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: var(--link-hover); /* Hover effect */
+  }
+  hr {
+    border: 3px solid rgba(255, 255, 255, 0.795);
+  }
 }
 body {
   background-image: url(../public/images/background-img.jpg);
@@ -22,20 +44,37 @@ body {
   margin: 0;
   height: 100%;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-}
+  color: var(--text-color);
 
-a {
-  color: #8f2a68da;
-  text-decoration: none;
-  font-size: 1rem;
-  margin: 0 1rem;
-  transition: color 0.3s ease;
-}
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    padding: var(--spacer);
+  }
+  h1 {
+    font-size: 2.5rem;
+    padding: var(--spacer);
+  }
+  h2 {
+    font-size: 2rem;
+    padding: var(--spacer);
+  }
 
-a:hover {
-  color: #ff4081; /* Hover effect */
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+    padding: var(--spacer);
+  }
+  li {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+  .container {
+    padding: var(--spacer);
+  }
 }
+/* Link styling */
 
-hr {
-  border: 3px solid rgb(0, 0, 0);
-}
+/* src/styles/styles.css */

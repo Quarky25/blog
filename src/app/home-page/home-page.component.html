@@ -1,15 +1,15 @@
-<div class="blog-container">
+<div class="blog-container flex justify-center align-middle flex-col">
   @for (post of posts; track $index) {
   <div class="blog-post">
-    <h2 class="blog-post-title">{{ post.title }}</h2>
-    <p class="blog-post-date">{{ post.date }}</p>
-    <p class="blog-post-content">{{ post.content | slice : 0 : 550 }}</p>
+    <h2 class="blog-post-title text-center">{{ post.title }}</h2>
+    <p class="blog-post-date" >{{ post.date }}</p>
+    <p class="blog-post-content text-center">{{ post.content | slice : 0 : 550 }}</p>
     <strong><hr /></strong>
 
-    <a type="button" class="btn btn-success" routerLink="details/{{ $index }}"
+    <a type="button" class="btn btn-success text-white" routerLink="details/{{ $index }}"
       >Read more</a
     >
-    <hr />
+   
   </div>
   }
 </div>

@@ -1,39 +1,28 @@
-/* src/styles/styles.css */
-
-/* Main Container */
 .about-container {
   width: 100%;
   max-width: 1200px;
   max-height: 800px;
   height: 100%;
   margin: 15rem auto;
-  padding: 2rem;
-  background-color: #000000b4;
+  background-color: var(--background-color);
+
   border-radius: 8px;
+  -webkit-box-shadow: 0 4px 8px rgba(253, 0, 0, 0.466);
   box-shadow: 0 4px 8px rgba(253, 0, 0, 0.466);
   overflow: auto;
 }
 h1,
 h2 {
   font-weight: bold;
-  color: #fbfbfcf8;
 }
 
 /* Header */
 .about-header {
   text-align: center;
-  margin-bottom: 2rem;
-}
-
-.about-header h1 {
-  font-size: 2.5rem;
-  color: #fbfbfcf8;
+  padding: var(--spacer);
 }
 
 .about-header p {
-  font-size: 1.2rem;
-  color: #fbfbfcf8;
-
   margin-top: 0.5rem;
 }
 
@@ -42,43 +31,17 @@ h2 {
   margin-bottom: 2rem;
 }
 
-.mission h2 {
-  font-size: 2rem;
-  color: #fbfbfcf8;
-}
-
 .mission p {
-  font-size: 1.2rem;
-  color: #fbfbfcf8;
-
-  line-height: 1.8;
   margin-top: 0.5rem;
 }
 
 .mission strong {
-  color: #fbfbfcf8;
+  color: var(--text-color);
 }
 
 /* Content Section */
 .content {
   margin-bottom: 2rem;
-}
-
-.content h2 {
-  font-size: 2rem;
-  color: #fbfbfcf8;
-}
-
-.content ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 1rem;
-}
-
-.content li {
-  font-size: 1.2rem;
-  line-height: 1.7;
-  margin-bottom: 1rem;
 }
 
 /* About Team Section */
@@ -92,33 +55,12 @@ h2 {
 }
 
 .about-team p {
-  font-size: 1.2rem;
-  color: #fbfbfcf8;
-
-  line-height: 1.8;
   margin-top: 0.5rem;
 }
 
 /* Join Section */
 .join {
-  margin-bottom: 1rem;
-}
-
-.join h2 {
-  font-size: 2rem;
-  color: #fbfbfcf8;
-}
-
-.join p {
-  font-size: 1.2rem;
-  color: #fbfbfcf8;
-
-  line-height: 1.8;
-  margin-top: 0.5rem;
-}
-
-.join strong {
-  color: #fbfbfcf8;
+  margin: 1rem auto;
 }
 
 /* Responsive Design */

@@ -1,5 +1,5 @@
 <!-- src/app/contact/contact.component.html -->
-<div class="contact-container">
+<div class="contact-container text-center">
   <header class="contact-header">
     <h1>Contact Us</h1>
     <p>
@@ -8,8 +8,8 @@
     </p>
   </header>
 
-  <form class="contact-form" (ngSubmit)="onSubmit()" [formGroup]="contactForm">
-    <div class="form-group">
+  <form class="contact-form flex flex-col justify-center align-middle" (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+    <div class="form-group flex flex-col text-start">
       <label for="name" class="form-label">Your Name</label>
       <input
         type="text"
@@ -20,7 +20,7 @@
       />
     </div>
 
-    <div class="form-group">
+    <div class="form-group flex flex-col text-start">
       <label for="eMail" class="form-label">Your Email</label>
       <input
         type="email"
@@ -31,7 +31,7 @@
       />
     </div>
 
-    <div class="form-group">
+    <div class="form-group flex flex-col text-start">
       <label for="subject" class="form-label">Subject</label>
       <input
         type="text"
@@ -42,7 +42,7 @@
       />
     </div>
 
-    <div class="form-group">
+    <div class="form-group flex flex-col text-start">
       <label for="message" class="form-label">Your Message</label>
       <textarea
         id="message"
