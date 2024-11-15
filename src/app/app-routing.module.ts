@@ -9,6 +9,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
   {path:"", component: HomePageComponent},
@@ -19,7 +20,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), MatMenuTrigger, MatMenu, MatMenuItem, MatListModule, MatToolbarModule, MatButtonModule, MatIconModule],
-  exports: [RouterModule, MatMenuTrigger, MatMenu, MatMenuItem, MatListModule, MatToolbarModule, MatButtonModule, MatIconModule]
+  imports: [RouterModule.forRoot(routes), MatMenuTrigger, MatMenu, MatMenuItem, MatListModule, MatToolbarModule, MatButtonModule, MatIconModule, BrowserAnimationsModule, ],
+  exports: [RouterModule, MatMenuTrigger, MatMenu, MatMenuItem, MatListModule, MatToolbarModule, MatButtonModule, MatIconModule, BrowserAnimationsModule]
 })
 export class AppRoutingModule { }

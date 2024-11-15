@@ -5,9 +5,19 @@
   left: 0;
   padding: 1rem;
   height: 15vh;
+  transition: height 0.3s ease, -webkit-height 0.3s ease;
+  -o-transition: height 0.3s ease;
 
+  -webkit-transition: -webkit-height 0.3s ease;
   box-shadow: 0px 2px 10px rgba(194, 8, 8, 0.801);
   -webkit-box-shadow: 0px 2px 10px rgba(194, 8, 8, 0.801);
+
+  &.small-navbar {
+    height: 1vh;
+  }
+  &.large-navbar {
+    height: 15vh;
+  }
 }
 
 /* Title Container Styling */
@@ -23,6 +33,15 @@
   -o-transition: transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  transition: height 0.3s ease, -webkit-height 0.3s ease;
+  -o-transition: height 0.3s ease;
+
+  &.small-title {
+    display: none;
+  }
+  &.large-title {
+    height: 59.2px;
+  }
 }
 
 .title-container:hover {
@@ -43,6 +62,16 @@
   -webkit-transition: font-size 0.1s ease;
   -o-transition: font-size 0.1s ease;
   transition: font-size 0.1s ease;
+  --webkit-transition: font-size 0.1s ease;
+  -o-transition: font-size 0.1s ease;
+  transition: font-size 0.1s ease;
+
+  &.small-title {
+    display: none;
+  }
+  &.large-title {
+    font-size: 1.5rem;
+  }
 }
 
 .title:hover {
@@ -70,10 +99,6 @@
   .title {
     font-size: 1.3rem;
   }
-
-  .title-container {
-    padding: 0.8rem;
-  }
 }
 
 /* Mobile View */
@@ -92,8 +117,15 @@
   }
 
   .title-container {
-    padding: 0.6rem;
     -webkit-box-shadow: 0px 1px 5px rgba(194, 8, 8, 0.801);
     box-shadow: 0px 1px 5px rgba(194, 8, 8, 0.801);
+    transition: display 0.3s ease;
+
+    &.small-title {
+      display: none;
+    }
+    &.large-title {
+      height: 59.2px;
+    }
   }
 }

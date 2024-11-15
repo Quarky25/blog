@@ -1,4 +1,11 @@
-<mat-toolbar class="navbar-container rounded-s-sm">
+<mat-toolbar
+  onscroll="onscroll()"
+  class="navbar-container open-close-container rounded-s-sm"
+  [ngClass]="{
+    'small-navbar': isScrollingDown,
+    'large-navbar': !isScrollingDown
+  }"
+>
   <div class="mobile-menu sm:hidden">
     <button
       mat-icon-button
@@ -46,8 +53,24 @@
     </div>
   </div>
   <div class="flex shrink-0 items-center pl-16">
-    <div class="title-container">
-      <p class="title" [ariaDisabled]="" routerLink="/">My Blogs</p>
+    <div
+      class="title-container"
+      [ngClass]="{
+        'small-title': isScrollingDown,
+        'large-title': !isScrollingDown
+      }"
+    >
+      <p
+        class="title"
+        [ngClass]="{
+          'small-title': isScrollingDown,
+          'large-title': !isScrollingDown
+        }"
+        [ariaDisabled]=""
+        routerLink="/"
+      >
+        My Blogs
+      </p>
     </div>
   </div>
   <div class="sm:ml-6 sm:block hidden">
