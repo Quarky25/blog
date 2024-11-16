@@ -1,16 +1,16 @@
 /* Footer */
 
 .footer-container {
-  height: 25vh;
+  height: 35vh;
 
   background-color: var(--background-color);
 
   box-shadow: 0px 2px 10px rgba(194, 8, 8, 0.801);
   -webkit-box-shadow: 0px 2px 10px rgba(194, 8, 8, 0.801);
 
-  transition: height 0.8s ease;
-  -o-transition: height 0.8s ease;
-  --webkit-transition: height 0.8s ease;
+  transition: height 0.1s ease;
+  -o-transition: height 0.1s ease;
+  --webkit-transition: height 0.1s ease;
   &.small-footer {
     height: 10vh;
   }
