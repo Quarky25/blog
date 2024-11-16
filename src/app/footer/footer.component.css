@@ -15,7 +15,7 @@
     height: 10vh;
   }
   &.large-footer {
-    height: 25vh;
+    height: 35vh;
   }
 }
 
@@ -33,6 +33,6 @@
     height: 10vh;
   }
   &.large-footer {
-    height: 25vh;
+    height: 35vh;
   }
 }
