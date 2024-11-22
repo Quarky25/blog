@@ -1,10 +1,6 @@
 <mat-toolbar
   onscroll="onscroll()"
   class="navbar-container open-close-container rounded-s-sm"
-  [ngClass]="{
-    'small-navbar': isScrollingDown,
-    'large-navbar': !isScrollingDown
-  }"
 >
   <div class="mobile-menu sm:hidden">
     <button
@@ -56,15 +52,15 @@
     <div
       class="title-container"
       [ngClass]="{
-        'small-title': isScrollingDown,
-        'large-title': !isScrollingDown
+        'small-title': scrollingDown,
+        'large-title': !scrollingDown
       }"
     >
       <p
         class="title"
         [ngClass]="{
-          'small-title': isScrollingDown,
-          'large-title': !isScrollingDown
+          'small-title': scrollingDown,
+          'large-title': !scrollingDown
         }"
         [ariaDisabled]=""
         routerLink="/"

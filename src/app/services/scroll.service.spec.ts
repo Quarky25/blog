@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { AnimationService } from './animation.service';
+import { ScrollService } from './scroll.service';
 
-describe('AnimationService', () => {
-  let service: AnimationService;
+describe('ScrollService', () => {
+  let service: ScrollService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(AnimationService);
+    service = TestBed.inject(ScrollService);
   });
 
   it('should be created', () => {

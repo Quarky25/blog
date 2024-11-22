@@ -1,44 +1,38 @@
-import { Component,HostBinding, signal } from '@angular/core';
+import { Component,HostBinding, NgZone, signal } from '@angular/core';
 import { trigger, state, style, animate, transition, query, useAnimation, stagger } from '@angular/animations';
 import { transitionAnimation } from '../services/transition-animation.service.service';
 import { HostListener } from '@angular/core';
-import { AnimationService } from '../service/animation.service';
+import {TriggerAnimationService } from '../services/trigger-animation.service.service';
+import { Observable, Subject, Subscription } from 'rxjs';
+import { ScrollService } from '../services/scroll.service';
+
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
-
+  animations: [transitionAnimation]
 })
 
 export class NavbarComponent {
- isScrollingDown = false; //! determines the navbar state
- lastScrollPosition = 0; //! Keeps track of the last scrollposition
- 
+  scrollState = 'expanded';
+  scrollingDown: boolean = false;
+  navItems = ['Home', 'About', 'Read more', 'Contact us', 'Title'];
+  private lastScrollTop = 0;
 
-
-  constructor() {
-    
-  }
-  // ! Detect Scroll Event
-  @HostListener('window:scroll', []) // for window scroll events
- 
-  onScroll(): void {
-    
-      const currentScrollPosition = window.scrollY || document.documentElement.scrollTop;
-
-      if(currentScrollPosition > this.lastScrollPosition) {
-        // ! Scrolling down
-        this.isScrollingDown = true;
-       
-        
-      }else {
-        // ! Scrolling up
-        this.isScrollingDown = false;
-        
-      }
-    this.lastScrollPosition = currentScrollPosition;
-  
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    const st = window.scrollY || document.documentElement.scrollTop;
+    if (st > this.lastScrollTop) {
+      // Scrolling down
+      this.scrollingDown = true;
+      this.scrollState = 'collapsed';
+    } else {
+      // Scrolling up
+      this.scrollState = 'expanded';
+      this.scrollingDown = false;
+    }
+    this.lastScrollTop = st <= 0 ? 0 : st;
   }
   
   
